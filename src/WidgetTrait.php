@@ -11,8 +11,6 @@ trait WidgetTrait
     /**
      * Gets an extension config value.
      *
-     * @param string $key
-     *
      * @return mixed
      */
     private function getConfig(string $key)
@@ -21,7 +19,7 @@ trait WidgetTrait
     }
 
     /**
-     * Determines whether the widget is
+     * Determines whether the widget is.
      *
      * @return bool
      */
@@ -30,7 +28,7 @@ trait WidgetTrait
         $zones = $this->getConfig('zones');
 
         // if zones are not set, then assume it shouldn't be shown anywhere.
-        if (!is_array($zones) || count($zones) === 0) {
+        if (!\is_array($zones) || 0 === \count($zones)) {
             return false;
         }
 
@@ -42,7 +40,7 @@ trait WidgetTrait
             }
 
             // Config only accepts backend and frontend, not async.
-            if (!in_array($zone, [RequestZone::FRONTEND, RequestZone::BACKEND], true)) {
+            if (!\in_array($zone, [RequestZone::FRONTEND, RequestZone::BACKEND], true)) {
                 continue;
             }
 
@@ -57,9 +55,6 @@ trait WidgetTrait
         return false;
     }
 
-    /**
-     * @return string|null
-     */
     private function build(): ?string
     {
         $googleTagManagerId = $this->getConfig('google_tag_manager');

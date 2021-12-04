@@ -8,9 +8,6 @@ use Bolt\Extension\BaseExtension;
 
 class Extension extends BaseExtension
 {
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return 'Google Tag Manager';
@@ -26,5 +23,6 @@ class Extension extends BaseExtension
     {
         $this->addWidget(new GoogleTagManagerHeadWidget());
         $this->addWidget(new GoogleTagManagerBodyWidget());
+        $this->addWidget(new GoogleTagManagerCookieWidget());
     }
 }

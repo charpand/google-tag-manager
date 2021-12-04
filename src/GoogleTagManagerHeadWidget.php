@@ -30,11 +30,6 @@ class GoogleTagManagerHeadWidget extends BaseWidget implements TwigAwareInterfac
      */
     protected $zone = RequestZone::EVERYWHERE;
 
-    /**
-     * @param array $params
-     *
-     * @return string|null
-     */
     public function run(array $params = []): ?string
     {
         return $this->build();

@@ -12,14 +12,14 @@ use Bolt\Widget\TwigAwareInterface;
 /**
  * Adds Google Tag Manager script into top of the <body> tag.
  */
-class GoogleTagManagerBodyWidget extends BaseWidget implements TwigAwareInterface
+class GoogleTagManagerCookieWidget extends BaseWidget implements TwigAwareInterface
 {
     use WidgetTrait;
 
-    protected $name = 'Google Tag Manager Body Widget';
-    protected $target = AdditionalTarget::START_OF_BODY;
+    protected $name = 'Google Tag Manager Cookie Widget';
+    protected $target = AdditionalTarget::END_OF_BODY;
     protected $priority = 200;
-    protected $template = '@google-tag-manager-body-widget/body.twig';
+    protected $template = '@google-tag-manager-body-widget/bootstrap_cookie_notice.twig';
     protected $cacheDuration = 0;
 
     /**
