@@ -1,5 +1,6 @@
 # The Container ID looks like 'GTM-XXXXX'.
 google_tag_manager:
+privacy_policy_uri: /privacy-policy
 
 # Manages where Tag Manager script will be loaded.
 zones:

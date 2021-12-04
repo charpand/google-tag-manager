@@ -58,13 +58,17 @@ trait WidgetTrait
     private function build(): ?string
     {
         $googleTagManagerId = $this->getConfig('google_tag_manager');
+        $privacyPolicyUri = $this->getConfig('privacy_policy_uri') ?? '/privacy-policy';
 
         if (empty($googleTagManagerId)) {
             return null;
         }
 
         if ($this->isEnabled()) {
-            return parent::run(['google_tag_manager' => $googleTagManagerId]);
+            return parent::run([
+                'google_tag_manager' => $googleTagManagerId,
+                'privacy_policy_uri' => $privacyPolicyUri,
+            ]);
         }
 
         return null;

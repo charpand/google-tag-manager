@@ -1,20 +1,19 @@
+{% trans_default_domain 'google_tag_manager' %}
 <div class="modal fade" tabindex="-1" data-bs-backdrop="static" role="dialog" id="consent-modal">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Cookies</h5>
+                <h5 class="modal-title">{{ 'modal.cookie_title'|trans }}</h5>
             </div>
             <div class="modal-body">
-                <p>Onze website maakt gebruik van cookies om het gebruik en functionaliteit te waarborgen van deze
-                    website.</p>
-                <a rel="nofollow noopener noreferrer" class="btn-block btn btn-link" href="https://huurdersplatformwesterkwartier.nl/privacy-policy"
-                   style="display: inline-block;">Privacy policy</a>
-                <button class="btn-block btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#modal-cookie-information">Meer informatie
-                </button>
+                <p>{{ 'modal.cookie_notice'|trans }}</p>
+                <a rel="nofollow noopener noreferrer" class="btn-block btn btn-link" href="{{ privacy_policy_uri }}"
+                   style="display: inline-block;">{{ 'modal.link_privacy_policy'|trans }}</a>
+                <button class="btn-block btn btn-link" type="button" data-bs-toggle="modal" data-bs-target="#modal-cookie-information">{{ 'modal.more_info'|trans }}</button>
             </div>
             <div class="modal-footer">
-                <button id="cookie-accept" type="button" class="btn btn-success">Accepteren</button>
-                <button id="cookie-deny" type="button" class="btn btn-danger">Weigeren</button>
+                <button id="cookie-accept" type="button" class="btn btn-success">{{ 'modal.action_accept'|trans }}</button>
+                <button id="cookie-deny" type="button" class="btn btn-danger">{{ 'modal.action_reject'|trans }}</button>
             </div>
         </div>
     </div>
@@ -23,7 +22,7 @@
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Cookie informatie</h5>
+                <h5 class="modal-title" id="staticBackdropLabel">{{ 'modal.cookie_information_title'|trans }}</h5>
                 <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -41,7 +40,7 @@
                     <i id="cookie-bar-privacy-page" style="display: inline-block;">
                         <br>Voor meer informatie over het gebruik op deze website van cookies, lees onze <a
                                 rel="nofollow noopener noreferrer" id="cookie-bar-privacy-link"
-                                href="https://huurdersplatformwesterkwartier.nl/privacy-policy">privacy policy</a>.<br><br></i>
+                                href="{{ privacy_policy_uri }}">{{ 'modal.link_privacy_policy'|trans }}</a>.<br><br></i>
 
                     <br>Door op <span>Accepteren</span> te klikken geef je toestemming aan deze website om cookies te
                     plaatsen.
@@ -57,7 +56,7 @@
                 </p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Begrepen</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ 'modal.button_understand'|trans }}</button>
             </div>
         </div>
     </div>

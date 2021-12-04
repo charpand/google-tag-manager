@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="nl" trgLang="nl">
+    <file id="google_tag_manager.nl">
+        <unit id="tbB2gib" name="modal.cookie_title">
+            <segment>
+                <source>modal.cookie_title</source>
+                <target>Cookies</target>
+            </segment>
+        </unit>
+        <unit id="0" name="modal.action_accept">
+            <segment>
+                <source>modal.action_accept</source>
+                <target>Accepteren</target>
+            </segment>
+        </unit>
+        <unit id="1" name="modal.action_reject">
+            <segment>
+                <source>modal.action_reject</source>
+                <target>Weigeren</target>
+            </segment>
+        </unit>
+        <unit id="2" name="modal.link_privacy_policy">
+            <segment>
+                <source>modal.link_privacy_policy</source>
+                <target>Privacy policy</target>
+            </segment>
+        </unit>
+        <unit id="3" name="modal.cookie_notice">
+            <segment>
+                <source>modal.cookie_notice</source>
+                <target>Onze website maakt gebruik van cookies om het gebruik en functionaliteit te waarborgen van deze website.</target>
+            </segment>
+        </unit>
+        <unit id="4" name="modal.more_info">
+            <segment>
+                <source>modal.more_info</source>
+                <target>Meer informatie</target>
+            </segment>
+        </unit>
+        <unit id="5">
+            <segment>
+                <source>modal.button_understand</source>
+                <target>Begrepen</target>
+            </segment>
+        </unit>
+        <unit id="6">
+            <segment>
+                <source>modal.cookie_information_title</source>
+                <target>Cookie informatie</target>
+            </segment>
+        </unit>
+    </file>
+</xliff>
