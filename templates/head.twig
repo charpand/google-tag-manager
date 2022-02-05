@@ -1,15 +1,16 @@
 <!-- Google Tag Manager -->
-<script>(function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
+<script>(function (window, document, script, dataLayer, google_tag_manager_token) {
+        window[dataLayer] = window[dataLayer] || [];
+        window[dataLayer].push({
             'gtm.start':
                 new Date().getTime(), event: 'gtm.js'
         });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        var f = document.getElementsByTagName(script)[0],
+            j = document.createElement(script),
+            dl = dataLayer !== 'dataLayer' ? '&l=' + dataLayer : '';
         j.async = true;
         j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            'https://www.googletagmanager.com/gtm.js?id=' + google_tag_manager_token + dl;
         f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', '{{ google_tag_manager }}');</script>
 <!-- End Google Tag Manager -->

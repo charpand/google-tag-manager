@@ -7,3 +7,17 @@ To get it set up, create a Container ID on [Google Tag Manager](https://tagmanag
 Snippets can be added to the frontend and/or backend using the configuration file.
 
 Read more about [setting up Tag Manager](https://support.google.com/tagmanager/answer/6103696?hl=en).
+
+
+Enabling
+--------
+
+To enable Google Tag Manager include the following config to `config/extensions/dsdeboer-googletagmanager.yaml` or `config/extensions/dsdeboer-googletagmanager_local.yaml`
+
+```yaml
+# The Container ID looks like 'GTM-XXXXX'.
+google_tag_manager: ''
+
+# If you don't already include bootstrap, also add the next line, otherwise leave it out! 
+auto_provide_bootstrap: true
+```

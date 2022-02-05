@@ -14,9 +14,9 @@
   },
   "require-dev": {
     "bolt/core": "^4.0 | ^5.0",
-    "symfony/twig-bundle": "^5.3",
-    "twig/extra-bundle": "^2.12|^3.0",
-    "twig/twig": "^2.12|^3.0",
+    "symfony/twig-bundle": "^5.3 | ^6.0",
+    "twig/extra-bundle": "^2.12 | ^3.0",
+    "twig/twig": "^2.12 | ^3.0",
     "roave/security-advisories": "dev-latest"
   },
   "minimum-stability": "stable",
@@ -28,5 +28,11 @@
   },
   "extra": {
     "entrypoint": "Dsdeboer\\GoogleTagManager\\Extension"
+  },
+  "config": {
+    "allow-plugins": {
+      "symfony/flex": true,
+      "drupol/composer-packages": true
+    }
   }
 }

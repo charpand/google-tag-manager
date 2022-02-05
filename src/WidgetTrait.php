@@ -23,7 +23,7 @@ trait WidgetTrait
      *
      * @return bool
      */
-    private function isEnabled()
+    private function isEnabled(): bool
     {
         $zones = $this->getConfig('zones');
 
@@ -58,6 +58,7 @@ trait WidgetTrait
     private function build(): ?string
     {
         $googleTagManagerId = $this->getConfig('google_tag_manager');
+        $autoProvideBootstrap = $this->getConfig('auto_provide_bootstrap');
         $privacyPolicyUri = $this->getConfig('privacy_policy_uri') ?? '/privacy-policy';
 
         if (empty($googleTagManagerId)) {
@@ -68,6 +69,7 @@ trait WidgetTrait
             return parent::run([
                 'google_tag_manager' => $googleTagManagerId,
                 'privacy_policy_uri' => $privacyPolicyUri,
+                'auto_provide_bootstrap' => $autoProvideBootstrap,
             ]);
         }
 
