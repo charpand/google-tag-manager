@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Dsdeboer\GoogleTagManager;
+namespace Charpand\GoogleTagManager;
 
 use Bolt\Widget\BaseWidget;
 use Bolt\Widget\Injector\AdditionalTarget;

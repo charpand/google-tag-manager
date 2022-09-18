@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Dsdeboer\GoogleTagManager;
+namespace Charpand\GoogleTagManager;
 
 use Bolt\Extension\BaseExtension;
 

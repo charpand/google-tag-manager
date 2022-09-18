@@ -1,5 +1,5 @@
 {
-  "name": "dsdeboer/google-tag-manager",
+  "name": "charpand/google-tag-manager",
   "description": "A Google Tag Manager extension for Bolt.",
   "type": "bolt-extension",
   "license": "MIT",
@@ -23,11 +23,11 @@
   "prefer-stable": true,
   "autoload": {
     "psr-4": {
-      "Dsdeboer\\GoogleTagManager\\": "src/"
+      "Charpand\\GoogleTagManager\\": "src/"
     }
   },
   "extra": {
-    "entrypoint": "Dsdeboer\\GoogleTagManager\\Extension"
+    "entrypoint": "Charpand\\GoogleTagManager\\Extension"
   },
   "config": {
     "allow-plugins": {

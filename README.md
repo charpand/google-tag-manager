@@ -12,7 +12,7 @@ Read more about [setting up Tag Manager](https://support.google.com/tagmanager/a
 Enabling
 --------
 
-To enable Google Tag Manager include the following config to `config/extensions/dsdeboer-googletagmanager.yaml` or `config/extensions/dsdeboer-googletagmanager_local.yaml`
+To enable Google Tag Manager include the following config to `config/extensions/charpand-googletagmanager.yaml` or `config/extensions/charpand-googletagmanager_local.yaml`
 
 ```yaml
 # The Container ID looks like 'GTM-XXXXX'.
